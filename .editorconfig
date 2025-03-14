@@ -1,0 +1,37 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-level configuration
+root = true
+
+# Apply these settings to all files
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Specific settings for Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# Specific settings for JSON files
+[*.json]
+indent_size = 2
+
+# Specific settings for YAML files
+[*.yaml]
+indent_size = 2
+
+[*.{png,jpg,jpeg,gif,ico,woff,woff2}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+
+
+# Specific settings for Makefiles
+[Makefile]
+indent_style = tab
+
