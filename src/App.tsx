@@ -1,7 +1,9 @@
+import { ConfigProvider } from 'antd';
+import GlobalTheme from './theme/index.ts';
 import './App.css';
 
 function App() {
-  return <div>Hello world</div>;
+  return <ConfigProvider theme={GlobalTheme}>Hello world</ConfigProvider>;
 }
 
 export default App;
